@@ -28,7 +28,8 @@ C:\xampp\htdocs\brgy-appointment
    It will automatically create the schema, tables, and sample data.
 
 4. Install dependencies:
-  ```bash composer install
+  ```bash
+  composer install
 
 5. Create a `.env` file in the project root and add the following:
   # Database Configuration
