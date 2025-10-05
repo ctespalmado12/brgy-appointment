@@ -33,13 +33,14 @@ C:\xampp\htdocs\brgy-appointment
 
 5. Create a `.env` file in the project root and add the following:
   # Database Configuration
-  DB_HOST=localhost
-  DB_USER=root
-  DB_PASS=
-  DB_NAME=brgy_appointment
-  
-  # SendinBlue API Key
-  MY_SENDINBLUE_API_KEY=your_api_key_here
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=brgy_appointment
+
+# SendinBlue API Key
+MY_SENDINBLUE_API_KEY=your_api_key_here
+
   
   > ⚙️ The `.env` file stores sensitive credentials such as your database connection details and API keys.  
   > Do **not** commit this file to Git — it is already listed in `.gitignore`.
