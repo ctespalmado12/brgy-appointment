@@ -1,6 +1,7 @@
 <?php
 
 //Appointment.php
+require_once __DIR__ . '/../vendor/autoload.php';
 
 class Appointment
 {
@@ -10,9 +11,32 @@ class Appointment
 	public $statement;
 	public $now;
 
+	private $dotenv;
+
+	private $DB_HOST;
+	private $DB_USER;
+	private $DB_PASS;
+	private $DB_NAME;
+
 	public function __construct()
 	{
-		$this->connect = new PDO("mysql:host=localhost:3306;dbname=brgy_appointment", "root", "root!");
+
+		// Load .env
+		$this->dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+		$this->dotenv->load();
+
+		// Read values from .env
+		$this->DB_HOST = $_ENV['DB_HOST'];
+		$this->DB_USER = $_ENV['DB_USER'];
+		$this->DB_PASS = $_ENV['DB_PASS'];
+		$this->DB_NAME = $_ENV['DB_NAME'];
+
+		// Create connection
+		$this->connect = new PDO(
+			"mysql:host={$this->DB_HOST};dbname={$this->DB_NAME}",
+			$this->DB_USER,
+			$this->DB_PASS
+		);
 
 		date_default_timezone_set('Asia/Kolkata');
 
