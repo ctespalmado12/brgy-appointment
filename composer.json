@@ -1,0 +1,19 @@
+{
+    "name": "qwerty/brgy-appointment",
+    "autoload": {
+        "psr-4": {
+            "Qwerty\\BrgyAppointment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fishda",
+            "email": "fishda456@gmail.com"
+        }
+    ],
+    "require": {
+        "sendinblue/api-v3-sdk": "8.3.0",
+        "firebase/php-jwt": "^6.3",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
