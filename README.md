@@ -39,7 +39,7 @@ DB_PASS=
 DB_NAME=brgy_appointment
 
 # SendinBlue API Key
-MY_SENDINBLUE_API_KEY=your_api_key_here
+SENDINBLUE_API_KEY=your_api_key_here
 
   
   > ⚙️ The `.env` file stores sensitive credentials such as your database connection details and API keys.  
