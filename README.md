@@ -33,8 +33,8 @@ C:\xampp\htdocs\brgy-appointment
 
 5. Create a `.env` file in the project root and add the following:
   # Database Configuration
-DB_HOST=localhost
-DB_USER=root
+DB_HOST=
+DB_USER=
 DB_PASS=
 DB_NAME=brgy_appointment
 
